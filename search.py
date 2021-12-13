@@ -48,7 +48,7 @@ for path, subdirs, files in os.walk(root):
             a.append(cret)
             b.append(a)
 
-with open('innovators.csv', 'w', newline='') as file:
+with open('result.csv', 'w', newline='') as file:
     fields = ['FolderPath','FileName','DateAccessed','ModifiedDate','CreationDate'] 
     writer = csv.writer(file)
     writer.writerow(fields) 
